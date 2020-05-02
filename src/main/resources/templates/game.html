@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="kubaokleja">
+  	<title>Game Center</title>
+  	<link th:href="@{css/game.css}" rel="stylesheet" type="text/css">
+  	<link th:href="@{css/fontello.css}" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class = "container">
+		<div>
+		<a th:href="@{/}"><button class="adminButton" style="vertical-align:middle">Back to Home Page</button></a>
+		</div>
+			
+		<a th:href="@{/game/test}">
+		<div class ="test">
+			<span>Test</span>
+		</div>
+		</a>
+			
+		<a th:href="@{/game/translator}">
+		<div class ="translator">
+			<span>Translator</span>		
+		</div>
+		</a>
+		
+		<a th:href="@{/game/hangman}">
+		<div class ="hangman">
+			<span>Hangman</span>
+		</div>
+		</a>
+		
+		<a th:href="@{/game/memory}">
+		<div class ="memory">
+			<span>Memory</span>
+		</div>
+		</a>
+		
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+id,polish,english,category
+1,pies,dog,GENERAL
+2,administrator,admin,IT
+3,algorytm,algorithm,IT
+4,aplikacja,application,IT
+5,"kopia zapasowa",backup,IT
+6,przeglądarka,browser,IT
+7,"błąd w kodzie",bug,IT
+8,obudowa,casing,IT
+9,"ładowarka, zasilacz",charger,IT
+10,chmura,cloud,IT
+11,kod,code,IT
+12,komenda,command,IT
+13,"monitor komputera","computer monitor",IT
+14,"treść, zawartość",content,IT
+15,"panel sterowania","control panel",IT
+16,procesor,CPU,IT
+17,kursor,cursos,IT
+18,wycinać,cut,IT
+19,panel,dashboard,IT
+20,dane,data,IT
+21,"baza danych",database,IT
+22,debugowanie,debugging,IT
+23,"wdrażać do produkcji",deploy,IT
+24,pulpit,desktop,IT
+25,"programista, developer",developer,IT
+26,"opracowywanie oprogramowania",development,IT
+27,urządzeie,device,IT
+28,dokument,document,IT
+29,pobieranie,download,IT
+30,przeciąganie,drag,IT
+31,sterowniki,drivers,IT
+32,edytować,edit,IT
+33,szyfrowanie,encryption,IT
+34,środowisko,environment,IT
+35,błąd,error,IT
+36,"dysk zewnętrzny","external drive",IT
+37,wentylator,fan,IT
+38,"cecha, funkcja ",feature,IT
+39,"opinia, wyniki",feedback,IT
+40,plik,file,IT
+41,folder,folder,IT
+42,czcionka,font,IT
+43,"zawieszenie się komputera",freeze,IT
+44,funkcjonalność,functionality,IT
+45,"dysk twardy","hard drive",IT
+46,sprzęt,hardware,IT
+47,pomoc,help,IT
+48,zaznaczenie,highlight,IT
+49,ikona,icon,IT
+50,interfejs,interface,IT
+51,"dostęp do Internetu","Inter access",IT
+52,"dostawca Internetu","Internet provider",IT
+53,klawiatura,keyboard,IT
+54,"skrót na klawiaturze","keyboard shortcut",IT
+55,"otwarcie aplikacji",launch,IT
+56,układ,layout,IT
+57,"logować się",login,IT
+58,"wylogować się",logout,IT
+59,megabajt,megabyte,IT
+60,pamięć,memory,IT
+61,"platforma mobilna","mobile platform",IT
+62,"płyta główna",motherboard,IT
+63,mysz,mouse,IT
+64,"podkładka pod mysz","mouse pad",IT
+65,sieć,network,IT
+66,"otwarte oprogramowanie","open source software",IT
+67,"system operacyjny","operating system",IT
+68,opcje,options,IT
+69,partycja,partition,IT
+70,hasło,password,IT
+71,wklejać,paste,IT
+72,"komputer stacjonarny","personal computer",IT
+73,wtyczka,plugin,IT
+74,port,port,IT
+75,zasilanie,"power supply",IT
+76,podgląd,preview,IT
+77,"język programowania","programming language",IT
+78,"kontrola jakości","quality assurance",IT
+79,"pamięć o dowolnym dostępie","random access memory",IT
+80,zapisać,save,IT
+81,"zapisać jako","save as",IT
+82,"rozdzielczość ekranu","screen resolution",IT
+83,przewijać,scroll,IT
+84,"pasek przewijania","scroll bar",IT
+85,serwer,server,IT
+86,oprogramowanie,software,IT
+87,"inżynieria oprogramowania","software engineering",IT
+88,"jakość oprogramowania","software quality",IT
+89,"karta dzwiękowa","sound card",IT
+90,głośniki,speakers,IT
+91,"arkusz obliczeniowy",spreadsheet,IT
+92,"zapisać się",subscribe,IT
+93,"pomoc, obsłuha",support,IT
+94,testowanie,testing,IT
+95,"pasek narzędzi",toolbar,IT
+96,narzędzia,tools,IT
+97,"panel dotykowy",touchpad,IT
+98,aktualizacja,update,IT
+99,udostępnianie,upload,IT
+100,"port USB","usb port",IT
+101,użytkownik,user,IT
+102,"karta graficzna","video card",IT
+103,widżet,widget,IT
+104,okno,window,IT
+105,"sieć bezprzewodowa","wireless network",IT
+106,potwierdzenie,acknowledgement,IT
+107,antywirus,antivirus,IT
+108,załącznik,attachment,IT
+109,kompatybilny,compatible,IT
+110,"nośnik danych","data carrier",IT
+111,wyjście,escape,IT
+112,dyskietka,"floppy disk",IT
+113,"skrzynka pocztowa ",mailbox,IT
+114,"skrócony zapis",abbreviation,IT
+115,analiza,analysis,IT
+116,"narzędzie wykonujące określone zadanie",appliance,IT
+117,"wyniknąć, pojawić się ",arise,IT
+118,dostępny,available,IT
+119,"wygoda, komfort",convenience,IT
+120,żadanie,demand,IT
+121,"mankament, wada, przeszkoda",drawback,IT
+122,produktywny,efficient,IT
+123,"zmęczenie oczu","eye strain",IT
+124,"łączenie w całość",integrate,IT
+125,"szczery wobec kogoś","level with someone",IT
+126,utrzymywać,maintain,IT
+127,projektować,design,IT
+128,modernizować,update,IT
+129,"obługiwać, działać na","run on",IT
+130,"wysypać się",crash,IT
+131,ciasteczka,cookie,IT

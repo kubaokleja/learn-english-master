@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="kubaokleja">
+  	<title>Test</title>
+  	<link th:href="@{/css/test.css}" rel="stylesheet" type="text/css">
+  	<link th:href="@{/css/fontello.css}" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div>
+		<a th:href="@{/game}"><button class="adminButton" style="vertical-align:middle">Games Main Page</button></a>
+		<a th:href="@{/game/test}"><button class="adminButton" style="vertical-align:middle">Solve again</button></a>
+	</div>
+	<span th:text="'Result: ' + ${score}">Result</span>
+	<br>
+	<span th:text="${message}">Best Score</span>
+</body>
+
+</html>

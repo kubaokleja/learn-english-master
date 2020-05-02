@@ -1,0 +1,249 @@
+body{
+	color: #c34f4f;
+	font-family: 'Lato', sans-serif;
+	background-color:#413F3F;
+}
+.container
+{
+	width:100%;
+	background-color:#413F3F;
+}
+.logo
+{
+	width: 100%;
+	font-size: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;
+	background-color:#FFFFFF;
+}
+.logo a
+{
+	text-decoration: none;
+}
+.navigator
+{
+	width:100%;
+	text-align:right;
+	background-color:#524F4F;
+}
+.navigator .loggedUser
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 26px;
+	width: 250px;
+	height: 40px;
+	line-height: 200%;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	float: left;
+	text-align:left;
+}
+.adminButton
+{
+  margin-top:15px;
+  background-color: #008B8B;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.adminButton:hover
+{
+	opacity: 80%;
+}
+.photo
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.image
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.image:hover {
+  opacity: 0.8;
+}
+.content
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+	margin-bottom:40px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	width:50%;
+	color:#F2F0F0;
+	text-align: center;
+}
+.content > ul > li 
+{
+	list-style-type:none;
+}
+.content .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3286D0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  padding: 40px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:30px;
+}
+
+.content .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.content .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.content .button:hover span {
+  padding-right: 25px;
+}
+
+.content .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#timer
+{
+	width:65%;
+	font-family: 'Josefin Sans', sans-serif;
+	color:#177C80;
+	font-size: 50px;
+	text-align: right;
+	float:left;
+}
+.footer
+{
+	width:100%;
+	padding:5px;
+	text-align: center;
+	color: #ffffff;
+	background-color:#524F4F;
+	text-align:center;
+	font-size: 24px;
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 26px;
+	height: 40px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	text-align:center;
+}
+
+.socials
+{
+	width:100%;
+	text-align: center;
+	background-color: #292929;
+	color:#FFFFFF;
+}
+
+.socialdivs
+{
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.socialdivs a
+{
+	color:#FFFFFF
+}
+.fb
+{
+	width: 250px;
+	height: 155px;
+	float:left;
+}
+
+.fb:hover
+{
+	background-color: #4668b3;
+}
+
+.ig
+{
+	width: 250px;
+	height: 155px;
+	float:left;
+}
+
+.ig:hover
+{
+	background-color: #d94348;
+}
+
+.linkedin
+{
+	width: 250px;
+	height: 155px;
+	float:left;
+}
+.linkedin:hover
+{
+	background-color: #3095d3;
+}
+.github
+{
+	width: 250px;
+	height: 155px;
+	float:left;
+}
+
+.github:hover
+{
+	background-color: #666666;
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}

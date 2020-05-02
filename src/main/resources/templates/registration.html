@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Registration Form</title>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="kubaokleja">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+    <link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}"/>
+  	<link th:href="@{css/fontello.css}" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" th:src="@{/js/timer.js}"></script>
+</head>
+
+<body onload="timer();">
+	<div class="container">
+		<div class = "header">
+			<div class="logo">
+				<img th:src="@{/images/light-on.png}" style="float: left;"/>
+				<div style="float: left; width: 30%"><a th:href="@{/game}"><span style="color: #0000ff">Learn </span>English</a></div>
+				<div id="timer">12:00:00</div>			
+				<div style="clear:both;"></div>
+			</div>
+			
+		</div>
+		<div class="navigator">
+			<div sec:authorize="isAuthenticated()" class="loggedUser" style="float:left;">  
+				User: <span sec:authentication="name"></span>
+			</div>
+			<ol>
+				<li><div sec:authorize="!isAuthenticated()"><a href="registration">Registration</a></div></li>
+				<li><div sec:authorize="!isAuthenticated()"><a href="login">Login</a></div></li>
+				<li><a href="index">Home Page</a></li>
+				<li><a href="about-me">About me</a></li>
+			</ol>
+		</div>
+		<div sec:authorize="hasRole('ROLE_ADMIN')">
+			<a th:href="@{/admin}"><button class="adminButton" style="vertical-align:middle"><span>Admin Panel</span></button></a>
+		</div>
+		<div class="content">
+		    <div class="row">
+		        <div class="col-md-6 col-md-offset-3">
+		            <form autocomplete="off" th:action="@{/registration}"
+		                  th:object="${gameUser}" method="post" class="form-horizontal"
+		                  role="form">
+		                
+		                <div class="form-group">
+		                    <div class="col-sm-9">
+		                        <label th:if="${#fields.hasErrors('username')}" th:errors="*{username}"
+		                               class="validation-message"></label>
+		                        <input type="text" th:field="*{username}" placeholder="Username (*)"
+		                               class="form-control"/>
+		                    </div>
+		                </div>   
+		                <div class="form-group">
+		                    <div class="col-sm-9">
+		                        <input type="password" th:field="*{password}"
+		                               placeholder="Password (*)" class="form-control"/> <label
+		                            th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
+		                            class="validation-message"></label>
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <div class="col-sm-9">
+		                        <input type="password" th:field="*{matchingPassword}"
+		                               placeholder="Confirm Password (*)" class="form-control"/> <label
+		                            th:if="${#fields.hasErrors('matchingPassword')}" th:errors="*{matchingPassword}"
+		                            class="validation-message"></label>
+		                    </div>
+		                </div>
+						<div class="form-group">
+		                    <div class="col-sm-9">
+		                        <input type="text" th:field="*{email}" placeholder="Email (*)"
+		                               class="form-control"/> <label
+		                            th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+		                            class="validation-message"></label>
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <div class="col-sm-9">
+		                        <button type="submit" class="btn btn-primary btn-block">Register User</button>
+		                    </div>
+		                </div>
+		
+		                <h2><span class="text-success" th:utext="${successMessage}"></span></h2>
+						<h2><span class="text-success" style="color:#FF0000" th:utext="${registrationError}"></span></h2>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+		</div>
+
+</body>
+</html>

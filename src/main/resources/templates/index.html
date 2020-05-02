@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="kubaokleja">
+  	<title>Home Page</title>
+  	<link th:href="@{css/homepage.css}" rel="stylesheet" type="text/css">
+  	<link th:href="@{css/fontello.css}" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" th:src="@{/js/timer.js}"></script>
+	
+
+</head>
+
+<body onload="timer();">
+	<div class="container">
+		<div class = "header">
+			<div class="logo">
+				<img th:src="@{/images/light-on.png}" style="float: left;"/>
+				<div style="float: left; width: 30%"><a th:href="@{/game}"><span style="color: #0000ff">Learn </span>English</a></div>
+				<div id="timer">12:00:00</div>			
+				<div style="clear:both;"></div>
+			</div>
+			
+		</div>
+		<div class="navigator">
+		<div sec:authorize="isAuthenticated()" class="loggedUser" style="float:left;">  
+				User: <span sec:authentication="name"></span>
+		</div>
+			<ol>
+				<li><div sec:authorize="!isAuthenticated()"><a href="registration">Registration</a></div></li>
+				<li><div sec:authorize="!isAuthenticated()"><a href="login">Login</a></div></li>
+				<li><a href="index">Home Page</a></li>
+				<li><a href="about-me">About me</a></li>
+			</ol>
+		</div>
+		<div sec:authorize="isAuthenticated()">
+			<form th:action="@{/logout}" method="POST" style="margin-right:10px">
+			<input type="submit" class="adminButton" value="Logout" />
+			</form>
+		</div>
+		<div sec:authorize="hasRole('ROLE_ADMIN')">
+			<a th:href="@{/admin}"><button class="adminButton" style="vertical-align:middle"><span>Admin Panel</span></button></a>
+		</div>
+		<div class="photo">
+			<img th:src="@{/images/english-learning.png}" class="image"/>
+		</div>
+	
+		<div class="content">
+			<span style="font-size:48px">Welcome to my web application! </span>
+			<br><br>
+			Learn English online.<div style="height:4px;"><br></div>
+			There is contained a few methods of learning:
+			<ul>
+			<li><span style="color:#3286D0">Translate the words </span></li>
+			<li><span style="color:#3286D0">Solve a test </span></li>
+			<li><span style="color:#3286D0">Memory game </span></li>
+			<li><span style="color:#3286D0">Hangman </span></li>
+			</ul>
+			<a th:href="@{/game}"><button class="button" style="vertical-align:middle"><span>Get Started</span></button></a>	
+		</div>
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb">
+					<a href="https://www.facebook.com/kuba.okleja" target="_blank"><i class="icon-facebook"></i></a>
+				</div>
+				<div class="ig">
+					<a href="https://www.instagram.com/kubaokleja/?hl=pl" target="_blank"><i class="icon-instagram"></i></a>
+				</div>
+				<div class="linkedin">
+					<a href="https://www.linkedin.com/in/jakub-okleja-614959192/" target="_blank"><i class="icon-linkedin-squared"></i></a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/kubaokleja" target="_blank"><i class="icon-github-circled"></i></a>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<div class="footer">Learning English &copy; 2020 Thank you for using my application! Improve yourself! :) </div>
+	</div>
+
+<script type="text/javascript" th:src="@{/js/jquery-1.11.3.min.js}"></script>
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.header').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.header').addClass('sticky');
+	} else {
+		$('.header').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+</body>
+</html>
