@@ -13,7 +13,7 @@ Application includes a few method to check yourself:
  
 You can create an account, log in and start using.
 Inputs have validation. Users' passwords are stored in the database protected by BCrypt algorithm.
-Admin Panel lets you do CRUD operations on users. 
+Admin Panel let you do CRUD operations on users. 
 There is created a REST API by Spring Data Rest. 
 
 ## Technologies
@@ -23,7 +23,7 @@ There is created a REST API by Spring Data Rest.
 * Hibernate
 ##### Frontend
 * HTML, CSS, JavaScript
-* jQuery (AJAX)
+* jQuery
 * Thymeleaf
 ##### Database
 * MySQL
