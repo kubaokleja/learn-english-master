@@ -1,7 +1,5 @@
 # Learn English
 Spring Boot &amp; Hibernate web application to learn english words. Created to fill the time during lockdown.
-## Overview
-https://www.youtube.com/watch?v=McIebUocNqA
 ## Description
 This web application was created in order to learn english.  Words are stored in database. 
 Base of words contains the words connected with IT and phrasal verbs (I use app to improve my English).
